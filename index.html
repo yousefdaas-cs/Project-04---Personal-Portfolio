@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Yousef Da'as, a Computer Science graduate showcasing software development, systems, and networking projects.">
+  <title>Yousef Da'as | Computer Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#top" class="brand-link" aria-label="Yousef Da'as Home">
+        <span class="brand-mark">&lt;YD/&gt;</span>
+        <span class="brand-name">Yousef Da'as</span>
+      </a>
+
+      <button 
+        type="button" 
+        class="nav-toggle" 
+        id="nav-toggle" 
+        aria-controls="primary-navigation" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button 
+          type="button" 
+          class="theme-toggle" 
+          id="theme-toggle" 
+          aria-label="Switch to light theme"
+          title="Switch theme"
+        >
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span class="theme-toggle-label">Theme</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Hello, my name is</p>
+          <h1 class="hero-title" id="hero-title">Yousef Da'as</h1>
+          <p class="hero-subtitle">Computer Science Graduate</p>
+          <p class="hero-description">
+            I build software solutions with a focus on clean fundamentals, Linux-based environments, and computer networking. Eager to tackle real-world engineering challenges and contribute to reliable technical systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Amman, Jordan
+            </span>
+            <span class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              B.Sc. in Computer Science
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <p class="section-subtitle">Background, education, and technical direction</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <div class="image-frame">
+              <img 
+                src="assets/profile.jpg" 
+                alt="Portrait of Yousef Da'as" 
+                class="profile-image" 
+                width="360" 
+                height="360"
+                loading="lazy"
+                onerror="this.classList.add('is-fallback'); this.nextElementSibling.style.display='flex';"
+              >
+              <div class="image-fallback" aria-hidden="true" style="display: none;">
+                <span>YD</span>
+              </div>
+            </div>
+            <p class="image-caption">Yousef Da'as &bull; Amman, Jordan</p>
+          </div>
+
+          <div class="about-content">
+            <p>
+              I am a Computer Science graduate from The University of Jordan with foundational training in software engineering, operating systems, and networking architecture.
+            </p>
+            <p>
+              My technical path is grounded in strong core principles: understanding what happens beneath higher-level abstractions, writing well-structured code, and working effectively with command-line tooling, version control, and system environments.
+            </p>
+            <p>
+              In addition to application development, I have actively expanded my knowledge of networking technologies, routing and switching, and enterprise infrastructure. I approach new technical problems with curiosity, analytical discipline, and an eagerness to learn.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <h3 class="highlight-title">Education</h3>
+                <p class="highlight-text">Bachelor of Computer Science</p>
+                <span class="highlight-sub">The University of Jordan</span>
+              </div>
+              <div class="highlight-card">
+                <h3 class="highlight-title">Focus Areas</h3>
+                <p class="highlight-text">Systems &amp; Software</p>
+                <span class="highlight-sub">Networking, Linux, Development</span>
+              </div>
+              <div class="highlight-card">
+                <h3 class="highlight-title">Languages</h3>
+                <p class="highlight-text">Arabic &amp; English</p>
+                <span class="highlight-sub">Native Arabic &bull; <a href="https://cert.efset.org/en/eNykhi">Proficient English</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" id="skills-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies, systems, and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <h3 class="category-title">Programming &amp; Development</h3>
+            </div>
+            <p class="category-desc">Languages applied through academic coursework, personal projects, and software labs.</p>
+            <ul class="skill-pill-list">
+              <li class="skill-pill">C++</li>
+              <li class="skill-pill">Python</li>
+              <li class="skill-pill">C#</li>
+              <li class="skill-pill">JavaScript (ES6+)</li>
+              <li class="skill-pill">HTML5</li>
+              <li class="skill-pill">CSS3</li>
+            </ul>
+          </article>
+
+          <!-- Category 2 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <h3 class="category-title">Systems &amp; Environments</h3>
+            </div>
+            <p class="category-desc">Operating systems, version management, and command-line system workflows.</p>
+            <ul class="skill-pill-list">
+              <li class="skill-pill">Linux (Ubuntu)</li>
+              <li class="skill-pill">Git Version Control</li>
+              <li class="skill-pill">GitHub</li>
+              <li class="skill-pill">Bash &amp; CLI</li>
+              <li class="skill-pill">Virtualization</li>
+            </ul>
+          </article>
+
+          <!-- Category 3 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <h3 class="category-title">Networking Foundations</h3>
+            </div>
+            <p class="category-desc">Core concepts studied through coursework, CCNA training, and hands-on labs.</p>
+            <ul class="skill-pill-list">
+              <li class="skill-pill">TCP/IP Protocol Suite</li>
+              <li class="skill-pill">Routing &amp; Switching</li>
+              <li class="skill-pill">IPv4 &amp; IPv6 Subnetting</li>
+              <li class="skill-pill">VLANs &amp; Network Troubleshooting</li>
+              <li class="skill-pill">Cisco Packet Tracer</li>
+            </ul>
+          </article>
+
+          <!-- Category 4 -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon" aria-hidden="true">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+              <h3 class="category-title">Tools &amp; Software</h3>
+            </div>
+            <p class="category-desc">Development environments, computational libraries, and technical software.</p>
+            <ul class="skill-pill-list">
+              <li class="skill-pill">Visual Studio / VS Code</li>
+              <li class="skill-pill">PyCharm</li>
+              <li class="skill-pill">Pandas &amp; NumPy</li>
+              <li class="skill-pill">Unity</li>
+              <li class="skill-pill">Inkscape</li>
+              <li class="skill-pill">Blender</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" id="projects-title">Featured Projects</h2>
+          <p class="section-subtitle">Verified GitHub repositories covering essential foundational competencies</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-preview">
+              <img 
+                src="assets/project-linux-git.jpg" 
+                alt="Screenshot or graphic preview for Linux, Git, and GitHub project" 
+                class="project-image"
+                loading="lazy"
+                onerror="this.classList.add('is-fallback'); this.nextElementSibling.style.display='flex';"
+              >
+              <div class="project-fallback" aria-hidden="true" style="display: none;">
+                <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>Terminal &amp; Git Workflow</span>
+              </div>
+              <span class="project-badge">Project 00</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Linux, Git, and GitHub</h3>
+              <p class="project-description">
+                A project dedicated to foundational developer operations, covering Linux command-line navigation, file system administration, shell utilities, and Git version control for repository management and collaboration.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Linux</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">CLI / Bash</span>
+              </div>
+              <div class="project-footer">
+                <a 
+                  href="https://github.com/yousefdaas-cs/Project-00-Linux-Git-GitHub" 
+                  class="project-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="View Project 00: Linux, Git, and GitHub repository on GitHub (opens in new tab)"
+                >
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-preview">
+              <img 
+                src="assets/project-html-fundamentals.jpg" 
+                alt="Screenshot or graphic preview for HTML Fundamentals project" 
+                class="project-image"
+                loading="lazy"
+                onerror="this.classList.add('is-fallback'); this.nextElementSibling.style.display='flex';"
+              >
+              <div class="project-fallback" aria-hidden="true" style="display: none;">
+                <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>Semantic HTML5</span>
+              </div>
+              <span class="project-badge">Project 01</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">HTML Fundamentals</h3>
+              <p class="project-description">
+                A project establishing structured, semantic HTML document architecture. Demonstrates standard markup hierarchy, forms, accessible elements, and document validation without relying on external frameworks.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">Semantic Markup</span>
+                <span class="tag">Accessibility</span>
+                <span class="tag">Web Standards</span>
+              </div>
+              <div class="project-footer">
+                <a 
+                  href="https://github.com/yousefdaas-cs/Project-01-HTML-Fundamentals" 
+                  class="project-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="View Project 01: HTML Fundamentals repository on GitHub (opens in new tab)"
+                >
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-preview">
+              <img 
+                src="assets/project-css-presentation.jpg" 
+                alt="Screenshot or graphic preview for CSS Visual Presentation project" 
+                class="project-image"
+                loading="lazy"
+                onerror="this.classList.add('is-fallback'); this.nextElementSibling.style.display='flex';"
+              >
+              <div class="project-fallback" aria-hidden="true" style="display: none;">
+                <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span>CSS Styling &amp; Layouts</span>
+              </div>
+              <span class="project-badge">Project 02</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">CSS Visual Presentation</h3>
+              <p class="project-description">
+                A project exploring CSS layout techniques, typography rules, color composition, and responsive presentation methods. Focuses on Flexbox models, CSS custom properties, and multi-device design adaptation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">CSS3</span>
+                <span class="tag">Flexbox</span>
+                <span class="tag">Responsive Design</span>
+                <span class="tag">Visual Hierarchy</span>
+              </div>
+              <div class="project-footer">
+                <a 
+                  href="https://github.com/yousefdaas-cs/Project-02-CSS-Visual-Presentation" 
+                  class="project-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="View Project 02: CSS Visual Presentation repository on GitHub (opens in new tab)"
+                >
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+		  <!-- Project 4: JavaScript Interactivity -->
+          <article class="project-card">
+            <div class="project-preview">
+              <img 
+                src="assets/project-javascript-interactivity.jpg" 
+                alt="Screenshot or graphic preview for JavaScript Interactivity project" 
+                class="project-image"
+                loading="lazy"
+                onerror="this.classList.add('is-fallback'); this.nextElementSibling.style.display='flex';"
+              >
+              <div class="project-fallback" aria-hidden="true" style="display: none;">
+                <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                  <line x1="12" y1="2" x2="12" y2="6"></line>
+                </svg>
+                <span>JS DOM &amp; Logic</span>
+              </div>
+              <span class="project-badge">Project 03</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">JavaScript Interactivity</h3>
+              <p class="project-description">
+                An implementation of dynamic client-side scripting using vanilla JavaScript (ES6+). Covers DOM manipulation, event-driven workflows, asynchronous operations, state handling, and interactive user interface components without third-party frameworks.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">DOM API</span>
+                <span class="tag">Event Handling</span>
+                <span class="tag">Client-Side Logic</span>
+              </div>
+              <div class="project-footer">
+                <a 
+                  href="https://github.com/yousefdaas-cs/Project-03-JavaScript-Interactivity" 
+                  class="project-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="View Project 03: JavaScript Interactivity repository on GitHub (opens in new tab)"
+                >
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+		  
+		  <!-- Personal Project : Nand -->
+          <article class="project-card">
+            <div class="project-preview">
+              <img 
+                src="assets/nand.jpg" 
+                alt="Screenshot or graphic preview for Nand, my graduation project" 
+                class="project-image"
+                loading="lazy"
+                onerror="this.classList.add('is-fallback'); this.nextElementSibling.style.display='flex';"
+              >
+              <div class="project-fallback" aria-hidden="true" style="display: none;">
+			  <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<path d="M12 5h3.5a5 5 0 0 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1 -3.923 -2.035l1.634 -8.173a5 5 0 0 1 4.904 -4.019h3.4" />
+				<path d="M14 15l4.07 4.284a2.3 2.3 0 0 0 3.925 -2.023l-1.6 -8.232" />
+				<path d="M8 9v2" />
+				<path d="M7 10h2" />
+				<path d="M14 10h2" />
+				</svg>
+                <span>C# &amp; Unity</span>
+              </div>
+              <span class="project-badge">Graduation Project </span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">C# &amp; Unity</h3>
+              <p class="project-description">
+                NAND: Not Another Nand Designer: Is my graduation project where we a team of 3 worked on Logic gate simulater with the aim to "Gamify the learning". I worked on grid placement logic, UI elements design and creating 2D/3D assets.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <span class="tag">blender</span>
+                <span class="tag">inkscape</span>
+              </div>
+              <div class="project-footer">
+                <div class="private-badge-wrap" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="tag" style="color: var(--text-muted); border-style: dashed;">
+                    🔒 Private Repository
+                  </span>
+                  <a href="#contact" class="project-link" style="font-size: 0.85rem;">
+                    Request Details / Code Samples &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+		  
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section interests-section" id="interests" aria-labelledby="interests-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" id="interests-title">Interests &amp; Pursuits</h2>
+          <p class="section-subtitle">Technical curiosity, creative tools, and ongoing exploration</p>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-item">
+            <div class="interest-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="interest-title">3D Modeling &amp; Graphics</h3>
+            <p class="interest-text">
+              Experimenting with spatial design, low-poly assets, and 3D modeling using Blender, coupled with vector graphics in Inkscape.
+            </p>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="interest-title">Home Networking &amp; Systems</h3>
+            <p class="interest-text">
+              Exploring packet routing, virtual machines, local Linux servers, and practicing network scenarios to reinforce networking theory.
+            </p>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="interest-title">Algorithmic Problem Solving</h3>
+            <p class="interest-text">
+              Solving data structure challenges in C++ and Python to strengthen analytical reasoning, runtime efficiency, and foundational logic.
+            </p>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="interest-title">Continuous Learning</h3>
+            <p class="interest-text">
+              Keeping up with modern operating system improvements, standard web specifications, and best practices in reliable software design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" id="contact-title">Get In Touch</h2>
+          <p class="section-subtitle">Have an opportunity, question, or collaboration? Reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-intro">
+              Feel free to connect directly through email, phone, or LinkedIn. I am always open to discussing early-career software engineering, IT, and networking opportunities.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-card">
+                <div class="contact-icon-bubble">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:YousefDaas.CS@gmail.com" class="contact-val">YousefDaas.CS@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-card">
+                <div class="contact-icon-bubble">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+962790745351" class="contact-val">+962 7 9074 5351</a>
+                </div>
+              </li>
+
+              <li class="contact-card">
+                <div class="contact-icon-bubble">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/yousef-da-as-104ba138a" class="contact-val" target="_blank" rel="noopener noreferrer">yousef-da-as</a>
+                </div>
+              </li>
+
+              <li class="contact-card">
+                <div class="contact-icon-bubble">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/yousefdaas-cs" class="contact-val" target="_blank" rel="noopener noreferrer">yousefdaas-cs</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Interactive Email Composer -->
+          <div class="contact-form-wrapper">
+            <h3 class="contact-form-title">Draft an Email</h3>
+            <p class="form-disclaimer">
+              Write your message below. Clicking <strong>Send via Email App</strong> will open your email client with everything pre-addressed to <strong>YousefDaas.CS@gmail.com</strong>.
+            </p>
+
+            <form class="contact-form" id="email-composer" novalidate>
+              <div class="form-group">
+                <label for="composer-name" class="form-label">Your Name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="composer-name" 
+                  class="form-input" 
+                  placeholder="e.g. Ahmad Khalil" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="composer-subject" class="form-label">Subject <span class="required-mark" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="composer-subject" 
+                  class="form-input" 
+                  placeholder="e.g. Project Discussion / Job Opportunity" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="composer-message" class="form-label">Message <span class="required-mark" aria-hidden="true">*</span></label>
+                <textarea 
+                  id="composer-message" 
+                  rows="5" 
+                  class="form-input form-textarea" 
+                  placeholder="Write your message here..." 
+                  required
+                ></textarea>
+              </div>
+
+              <div class="composer-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <button type="submit" class="btn btn-primary" style="flex: 1 1 200px;">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Send via Email App</span>
+                </button>
+                <button type="button" id="copy-draft-btn" class="btn btn-secondary" style="flex: 1 1 160px;">
+                  <span>Copy Message Text</span>
+                </button>
+              </div>
+
+              <div class="form-status" id="composer-status" role="status" aria-live="polite" style="margin-top: 1rem;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">&lt;YD/&gt; Yousef Da'as</span>
+        <p class="footer-copyright">Built with the help of my peers and instructers at 42Academy.</p>
+      </div>
+      
+      <div class="footer-right">
+        <ul class="footer-nav" aria-label="Footer links">
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+          <li><a href="#top" class="footer-link top-link" aria-label="Back to top of page">&uarr; Back to Top</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
