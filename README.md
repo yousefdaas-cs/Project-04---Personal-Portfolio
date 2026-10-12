@@ -1,8 +1,8 @@
 # Personal Portfolio Website — Yousef Da'as
 
-A responsive personal portfolio website built entirely from scratch for **Yousef Da'as**, a Computer Science graduate.
+A responsive personal portfolio website built as the a task for 42academy.
 
-The website presents foundational software development, systems, and networking projects with a dark-themed visual hierarchy, accessible semantic elements, and native browser interactions.
+The website presents Linux, Git & GitHub, and web projects with a dark & light themes and accessible semantic elements.
 
 ---
 
@@ -28,4 +28,6 @@ portfolio/
     ├── profile.jpg
     ├── project-linux-git.jpg
     ├── project-html-fundamentals.jpg
-    └── project-css-presentation.jpg
+    ├── project-css-presentation.jpg
+	├── project-javascript-interactivity.jpg
+    └── NAND.jpg
