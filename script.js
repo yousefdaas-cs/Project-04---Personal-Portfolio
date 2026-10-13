@@ -1,9 +1,3 @@
-/**
- * Personal Portfolio Interactive Functionality
- * Author: Yousef Da'as
- * Technologies: Vanilla JavaScript (ES6+)
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   initThemeSwitcher();
   initMobileNavigation();
@@ -11,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNavigationScroll();
 });
 
-/**
- * Theme Switcher with localStorage persistence
- */
+/* Theme Switcher  */
 function initThemeSwitcher() {
   const themeToggle = document.getElementById('theme-toggle');
   if (!themeToggle) return;
@@ -66,14 +58,6 @@ function initMobileNavigation() {
         toggleMenu(false);
       }
     });
-  });
-
-  // Close when pressing the Escape key
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && toggleButton.getAttribute('aria-expanded') === 'true') {
-      toggleMenu(false);
-      toggleButton.focus();
-    }
   });
 
   function toggleMenu(open) {
