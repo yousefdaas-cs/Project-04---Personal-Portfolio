@@ -178,6 +178,3 @@ ul { list-style: none; }
   .nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   .skill-category-card, .interest-item { flex: 1 1 100%; }
 }
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
-}
