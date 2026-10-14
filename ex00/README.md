@@ -1,6 +1,6 @@
 # Personal Portfolio Website — Yousef Da'as
 
-A responsive personal portfolio website built as the a task for 42academy.
+A responsive personal portfolio website built as a task for 42academy.
 
 The website presents Linux, Git & GitHub, and web projects with a dark & light themes and accessible semantic elements.
 
@@ -9,7 +9,7 @@ The website presents Linux, Git & GitHub, and web projects with a dark & light t
 ## 1. Technologies Used
 
 * **HTML5**: Semantic document structure, accessible landmark elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`), and accessible form controls.
-* **CSS3**: Custom properties (CSS variables) for dynamic theming, Flexbox for responsive layouts, media queries, and `prefers-reduced-motion` compliance.
+* **CSS3**: Custom properties (CSS variables) for dynamic theming, Flexbox for responsive layouts and  media queries.
 * **Vanilla JavaScript (ES6+)**: Theme toggling with `localStorage` persistence, mobile hamburger menu control, and client-side contact form validation.
 
 No CSS frameworks, JavaScript libraries, UI kits, package managers, or build tools are used.
