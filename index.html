@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Yousef Da'as, a Computer Science graduate showcasing software development, systems, and networking projects.">
-  <title>Yousef Da'as | Computer Science Portfolio</title>
+  <meta name="description" content="Personal portfolio of Yousef Da'as, a Computer Science graduate focused on cybersecurity, networking, IT infrastructure, and software projects.">
+  <title>Yousef Da'as | Cybersecurity &amp; IT Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
@@ -226,7 +226,33 @@
             </ul>
           </article>
 
-          <!-- Category 4 -->
+
+
+          <!-- Category 4: Cybersecurity -->
+          <article class="skill-category-card">
+            <div class="category-header">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon" aria-hidden="true">
+                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <h3 class="category-title">Cybersecurity &amp; Web Application Security</h3>
+            </div>
+            <p class="category-desc">Vulnerability analysis and attack techniques explored through controlled security exercises, with attention to payload behavior and remediation.</p>
+            <ul class="skill-pill-list">
+              <li class="skill-pill">Web Application Security</li>
+              <li class="skill-pill">Cross-Site Scripting (XSS)</li>
+              <li class="skill-pill">Cross-Site Request Forgery (CSRF)</li>
+              <li class="skill-pill">SQL Injection</li>
+              <li class="skill-pill">Server-Side Template Injection (SSTI)</li>
+              <li class="skill-pill">XML External Entity (XXE)</li>
+              <li class="skill-pill">Server-Side Request Forgery (SSRF)</li>
+              <li class="skill-pill">Insecure Deserialization</li>
+              <li class="skill-pill">Cryptographic Attack Concepts</li>
+              <li class="skill-pill">Vulnerability Remediation</li>
+            </ul>
+          </article>
+
+          <!-- Category 5 -->
           <article class="skill-category-card">
             <div class="category-header">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="category-icon" aria-hidden="true">
@@ -253,10 +279,76 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" id="projects-title">Featured Projects</h2>
-          <p class="section-subtitle">Verified GitHub repositories covering essential foundational competencies</p>
+          <p class="section-subtitle">Selected work across cybersecurity, systems, networking, and software development</p>
         </div>
 
         <div class="projects-grid">
+
+          <!-- Cybersecurity Project -->
+          <article class="project-card">
+            <div class="project-preview">
+              <svg class="project-art" viewBox="0 0 640 400" role="img" aria-labelledby="security-art-title security-art-desc" xmlns="http://www.w3.org/2000/svg">
+                <title id="security-art-title">Web application security illustration</title>
+                <desc id="security-art-desc">A shield protecting a browser window, with code and security scan indicators.</desc>
+                <defs>
+                  <linearGradient id="sec-bg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#14243a"/>
+                    <stop offset="1" stop-color="#0b1220"/>
+                  </linearGradient>
+                  <linearGradient id="sec-shield" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#56d6c5"/>
+                    <stop offset="1" stop-color="#3297c8"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="400" fill="url(#sec-bg)"/>
+                <g opacity=".13" stroke="#7da7c9" stroke-width="1">
+                  <path d="M0 50H640M0 100H640M0 150H640M0 200H640M0 250H640M0 300H640M0 350H640"/>
+                  <path d="M50 0V400M100 0V400M150 0V400M200 0V400M250 0V400M300 0V400M350 0V400M400 0V400M450 0V400M500 0V400M550 0V400M600 0V400"/>
+                </g>
+                <rect x="70" y="82" width="300" height="220" rx="14" fill="#101b2b" stroke="#35506b" stroke-width="3"/>
+                <path d="M70 122h300" stroke="#35506b" stroke-width="3"/>
+                <circle cx="94" cy="102" r="6" fill="#e58d86"/><circle cx="116" cy="102" r="6" fill="#e5c477"/><circle cx="138" cy="102" r="6" fill="#68c7a8"/>
+                <path d="m112 164-28 24 28 24M164 164l28 24-28 24M147 154l-15 70" fill="none" stroke="#65c9c0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M96 252h150M96 272h105" stroke="#45627e" stroke-width="7" stroke-linecap="round"/>
+                <path d="M442 70 548 111v78c0 83-54 133-106 160-52-27-106-77-106-160v-78z" fill="url(#sec-shield)" opacity=".18"/>
+                <path d="M442 88 531 122v66c0 69-42 112-89 139-47-27-89-70-89-139v-66z" fill="none" stroke="url(#sec-shield)" stroke-width="9" stroke-linejoin="round"/>
+                <path d="m398 194 30 30 61-69" fill="none" stroke="#73e1c7" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="540" cy="294" r="31" fill="#173c4b" stroke="#56d6c5" stroke-width="3"/>
+                <path d="M540 276v36M522 294h36" stroke="#56d6c5" stroke-width="5" stroke-linecap="round"/>
+                <text x="70" y="350" fill="#8da9c4" font-family="monospace" font-size="16" letter-spacing="3">APPLICATION SECURITY LABS</text>
+              </svg>
+              <span class="project-badge">Cybersecurity</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Web Application Security Fundamentals</h3>
+              <p class="project-description">
+                A collection of practical security exercises exploring common web-application vulnerabilities. The repository includes exercise notes, test payloads, and remediation guidance covering XSS, CSRF, SQL injection, SSTI, XXE, SSRF, insecure deserialization, and cryptographic attack concepts.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Web Security</span>
+                <span class="tag">Vulnerability Analysis</span>
+                <span class="tag">Payload Testing</span>
+                <span class="tag">Remediation</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/yousefdaas-cs/Pro-Piscine---Web-Application-Security-Fundamentals"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Web Application Security Fundamentals repository on GitHub (opens in new tab)"
+                >
+                  <span>View Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
           <!-- Project 1 -->
           <article class="project-card">
             <div class="project-preview">
